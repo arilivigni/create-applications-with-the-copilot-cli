@@ -58,8 +58,9 @@ jobs:
       - name: Check if issue title contains Calculator or Operations
         id: check-issue-title
         continue-on-error: true
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
-          ISSUE_TITLE="${{ github.event.issue.title }}"
           if [[ "$ISSUE_TITLE" =~ [Cc]alculator ]] || [[ "$ISSUE_TITLE" =~ [Oo]perations ]]; then
             echo "Issue title contains relevant keyword"
             exit 0

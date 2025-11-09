@@ -58,8 +58,9 @@ jobs:
       - name: Check if new issue contains Calculator keyword
         id: check-issue-title
         continue-on-error: true
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
-          ISSUE_TITLE="${{ github.event.issue.title }}"
           if [[ "$ISSUE_TITLE" =~ [Cc]alculator ]]; then
             echo "Issue title contains Calculator keyword"
             exit 0
@@ -71,8 +72,9 @@ jobs:
       - name: Check if issue has body content
         id: check-issue-body
         continue-on-error: true
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
-          ISSUE_BODY="${{ github.event.issue.body }}"
           if [ -n "$ISSUE_BODY" ] && [ ${#ISSUE_BODY} -gt 10 ]; then
             echo "Issue has body content"
             exit 0
