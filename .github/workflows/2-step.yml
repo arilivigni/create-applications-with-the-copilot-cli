@@ -2,9 +2,9 @@ name: Step 2
 
 on:
   workflow_dispatch:
-  issues:
-    types:
-      - opened
+  push:
+    paths:
+      - 'calculator.js'
 
 permissions:
   contents: write
@@ -55,33 +55,21 @@ jobs:
           file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
           edit-mode: replace
 
-      - name: Check if new issue contains Calculator keyword
-        id: check-issue-title
+      - name: Check if calculator.js has basic functions
+        id: check-add-function
         continue-on-error: true
-        env:
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-        run: |
-          if [[ "$ISSUE_TITLE" =~ [Cc]alculator ]]; then
-            echo "Issue title contains Calculator keyword"
-            exit 0
-          else
-            echo "Issue title does not contain Calculator keyword"
-            exit 1
-          fi
+        uses: skills/action-keyphrase-checker@v1
+        with:
+          text-file: calculator.js
+          keyphrase: add
 
-      - name: Check if issue has body content
-        id: check-issue-body
+      - name: Check if calculator.js has subtract function
+        id: check-subtract-function
         continue-on-error: true
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-        run: |
-          if [ -n "$ISSUE_BODY" ] && [ ${#ISSUE_BODY} -gt 10 ]; then
-            echo "Issue has body content"
-            exit 0
-          else
-            echo "Issue body is empty or too short"
-            exit 1
-          fi
+        uses: skills/action-keyphrase-checker@v1
+        with:
+          text-file: calculator.js
+          keyphrase: subtract
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -94,10 +82,10 @@ jobs:
           vars: |
             step_number: 2
             results_table:
-              - description: "Issue title contains 'Calculator' keyword"
-                passed: ${{ steps.check-issue-title.outcome == 'success' }}
-              - description: "Issue has description/body content"
-                passed: ${{ steps.check-issue-body.outcome == 'success' }}
+              - description: "Calculator has 'add' function"
+                passed: ${{ steps.check-add-function.outcome == 'success' }}
+              - description: "Calculator has 'subtract' function"
+                passed: ${{ steps.check-subtract-function.outcome == 'success' }}
 
       - name: Fail job if not all checks passed
         if: contains(steps.*.outcome, 'failure')
