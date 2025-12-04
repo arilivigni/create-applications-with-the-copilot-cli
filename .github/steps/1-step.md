@@ -6,7 +6,7 @@ Duck is getting ready to manage development for the Node.js calculator app and w
 
 **What is GitHub Copilot CLI?**
 
-GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. Unlike the GitHub CLI (`gh`) extension, Copilot CLI is installed separately via npm and provides a rich interactive experience for developers.
+GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It is installed via npm and provides a rich interactive experience for developers.
 
 Key capabilities include:
 - Providing intelligent command suggestions powered by the latest AI models from OpenAI and Google
@@ -86,7 +86,6 @@ Issue templates help maintain consistency when team members create issues. This 
 
 - Make sure you have Node.js 22+ installed: `node --version`
 - If npm install fails, try: `sudo npm install -g @github/copilot`
-- The `copilot` command is separate from `gh copilot` - they are different tools
 - Make sure you have GitHub Copilot access enabled for your account
 - You can create the issue through the GitHub UI if CLI commands aren't working
 - Make sure to use the existing template when creating your issue
