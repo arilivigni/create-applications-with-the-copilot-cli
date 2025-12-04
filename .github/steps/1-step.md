@@ -56,26 +56,26 @@ Issue templates help maintain consistency when team members create issues. This 
 > [!TIP]
 > After installation, you can use the `copilot` command anywhere in your terminal to start an interactive session!
 
-### ⌨️ Activity 2: Create an Issue Using the Existing Template
+### ⌨️ Activity 2: Create an Issue Using Copilot CLI
 
-1. This repository already has a feature request issue template at `.github/ISSUE_TEMPLATE/feature_request.md`. Take a look at it:
+1. Start an interactive Copilot CLI session:
    ```bash
-   cat .github/ISSUE_TEMPLATE/feature_request.md
+   copilot
    ```
 
-1. Create a new issue for the calculator app using the GitHub CLI with the template:
-   ```bash
-   gh issue create --title "Initial Node.js Calculator App" --template feature_request.md
+1. Ask Copilot CLI to help you create a feature request issue for the calculator app:
    ```
-   
-   Fill in the template with:
+   Help me create a GitHub issue for a Node.js calculator app. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
+   ```
+
+1. Copilot CLI will help you draft and create the issue. Follow the prompts to:
    - **Feature description**: Create a basic Node.js calculator with addition, subtraction, multiplication, and division operations
    - **Use case**: Learning to use Copilot CLI for code generation and development
    - **Additional context**: The calculator should be implemented in calculator.js
 
-1. Alternatively, you can ask Copilot CLI for help drafting the issue:
-   ```bash
-   copilot -p "Help me write a feature request for a Node.js calculator app with basic arithmetic operations"
+1. You can also use the `/delegate` command to have Copilot create the issue for you:
+   ```
+   /delegate Create a GitHub issue titled "Initial Node.js Calculator App" requesting basic arithmetic operations (add, subtract, multiply, divide) to be implemented in calculator.js
    ```
 
 > [!NOTE]
@@ -87,7 +87,7 @@ Issue templates help maintain consistency when team members create issues. This 
 - Make sure you have Node.js 22+ installed: `node --version`
 - If npm install fails, try: `sudo npm install -g @github/copilot`
 - Make sure you have GitHub Copilot access enabled for your account
-- You can create the issue through the GitHub UI if CLI commands aren't working
-- Make sure to use the existing template when creating your issue
+- If authentication fails, run `copilot` and follow the login prompts
+- You can also create the issue through the GitHub UI if needed
 
 </details>
