@@ -87,12 +87,6 @@ Issue templates help maintain consistency when team members create issues. This 
 
 ### ⌨️ Activity 3: Create an Issue Using Copilot CLI
 
-> [!NOTE]
-> - Keep in mind that the Copilot agent mode is conversational so it may ask you questions and you can ask it questions too.
-> - When using Copilot Chat, you can select the **Agent** mode instead of **Ask** or **Edit** from the drop down.
->
->   <img src="https://github.com/user-attachments/assets/b9e291be-d835-4de0-ac1c-35a6ec3ea72d" width=30% height=30%>
-
 1. Start an interactive Copilot CLI session:
    ```bash
    copilot
