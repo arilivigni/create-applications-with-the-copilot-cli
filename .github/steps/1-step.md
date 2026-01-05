@@ -117,7 +117,7 @@ Issue templates help maintain consistency when team members create issues. This 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Help me create a GitHub issue for a Node.js calculator app. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
+   > Help me create a GitHub issue for a Node.js calculator app using the issue template. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
    > ```
 
 1. Copilot CLI will help you draft and create the issue. Follow the prompts to:
@@ -125,17 +125,6 @@ Issue templates help maintain consistency when team members create issues. This 
    - **Feature description**: Create a basic Node.js calculator with addition, subtraction, multiplication, and division operations
    - **Use case**: Learning to use Copilot CLI for code generation and development
    - **Additional context**: The calculator should be implemented in calculator.js
-
-1. You can also use the `/delegate` command to have Copilot create the issue for you:
-
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /delegate Create a GitHub issue titled "Initial Node.js Calculator App" requesting basic arithmetic operations (add, subtract, multiply, divide) to be implemented in calculator.js
-   > ```
-
-> [!NOTE]
-> When you create the issue, the workflow will automatically verify your work and prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

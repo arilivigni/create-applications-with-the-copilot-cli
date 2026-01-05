@@ -55,7 +55,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > [!TIP]
 > Use the `!` command in Copilot CLI to execute shell commands directly from your chat session!
 
-### ⌨️ Activity: Generate Calculator Code with Copilot CLI
+### ⌨️ Activity: Generate Calculator Code with Copilot CLI based on an Image
 
 1. Save this image locally as `node-js-calculator.png` to use as a visual reference for the calculator interface:
 
@@ -72,12 +72,12 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > copilot
    > ```
 
-1. Ask Copilot CLI to help you create the calculator functions:
+1. Ask Copilot CLI to help you create the calculator functions based on the image:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > @node-js-calculator.png help me create a Node.js calculator app based on
+   > @images/node-js-calculator.png help me create a Node.js calculator app based on
    > this image and all the math operations shown.
    > Make sure to create the "src" directory and put all the app code there.
    > ```
@@ -87,7 +87,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot -p "@node-js-calculator.png help me create
+   > copilot -p "@images/node-js-calculator.png help me create
    > a Node.js calculator app based on this image
    > and all the math operations shown.
    > Make sure to create the 'src' directory and put all the app code there."
