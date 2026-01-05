@@ -4,11 +4,12 @@ Duck is getting ready to manage development for the Node.js calculator app and w
 
 ### 📖 Theory: GitHub Copilot CLI - A Standalone Terminal Application
 
-**What is GitHub Copilot CLI?**
+#### What is GitHub Copilot CLI?
 
 GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It is installed via npm and provides a rich interactive experience for developers.
 
 Key capabilities include:
+
 - Providing intelligent command suggestions powered by the latest AI models from OpenAI and Google
 - Generating code snippets and scripts directly in your terminal
 - Assisting with Git operations and GitHub interactions
@@ -17,21 +18,24 @@ Key capabilities include:
 - Creating **custom agents** to encode specialized prompts and workflows
 - Delegating tasks to **Copilot coding agent** using the `/delegate` command
 
-**Installation Requirements**
+#### Installation Requirements
 
 To install Copilot CLI, you need:
+
 - Node.js version 22 or later
 - npm version 10 or later
 - An active GitHub Copilot subscription (Pro, Pro+, Business, or Enterprise)
 
-**Issue Templates**
+#### Issue Templates
 
 Issue templates help maintain consistency when team members create issues. This repository already has a `feature_request.md` template that you'll use to create your calculator app issue. Templates ensure:
+
 - All necessary information is captured upfront
 - Issues follow a standard format
 - The team can triage and respond to issues more efficiently
 
-**References:**
+#### References
+
 - [Installing GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli)
 - [Using GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 - [GitHub Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/)
@@ -55,7 +59,7 @@ Issue templates help maintain consistency when team members create issues. This 
 1. Before we continue let's take a moment to familiarize ourselves with the project folder.
 
    - The left navigation bar is where you can access the file explorer, debugger, and search.
-   - The lower panel (Ctrl+J) shows the debugger output, allows running terminal commands, and allows configuring the web service ports.
+   - The lower panel (Ctrl+j) shows the debugger output, allows running terminal commands, and allows configuring the web service ports.
    - Our calculator.js file is where we'll implement the calculator functionality.
 
 1. At the top of VS Code, locate and click the Copilot icon to open a Copilot Chat panel.
@@ -63,24 +67,37 @@ Issue templates help maintain consistency when team members create issues. This 
    <img width="150" alt="image" src="https://github.com/user-attachments/assets/5e64db46-95cb-415d-badc-b6b8677f10c1" />
 
 1. If this is your first time using GitHub Copilot, you will have to accept the usage terms to continue.
-    - Click the **Accept** button to continue.
+   - Click the **Accept** button to continue.
 
 ### ⌨️ Activity 2: Install the Standalone Copilot CLI
 
 1. Open your Codespace (if not already open)
+
 1. Install the standalone GitHub Copilot CLI by running:
-   ```bash
-   npm install -g @github/copilot
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > npm install -g @github/copilot
+   > ```
+
 1. Verify the installation by running:
-   ```bash
-   copilot --version
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > copilot --version
+   > ```
+
 1. Start Copilot CLI and authenticate with your GitHub account:
-   ```bash
-   copilot
-   ```
-   Follow the prompts to complete authentication if this is your first time.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > copilot
+   > ```
+   >
+   > Follow the prompts to complete authentication if this is your first time.
 
 > [!TIP]
 > After installation, you can use the `copilot` command anywhere in your terminal to start an interactive session!
@@ -88,24 +105,34 @@ Issue templates help maintain consistency when team members create issues. This 
 ### ⌨️ Activity 3: Create an Issue Using Copilot CLI
 
 1. Start an interactive Copilot CLI session:
-   ```bash
-   copilot
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > copilot
+   > ```
 
 1. Ask Copilot CLI to help you create a feature request issue for the calculator app:
-   ```
-   Help me create a GitHub issue for a Node.js calculator app. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Help me create a GitHub issue for a Node.js calculator app. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
+   > ```
 
 1. Copilot CLI will help you draft and create the issue. Follow the prompts to:
+
    - **Feature description**: Create a basic Node.js calculator with addition, subtraction, multiplication, and division operations
    - **Use case**: Learning to use Copilot CLI for code generation and development
    - **Additional context**: The calculator should be implemented in calculator.js
 
 1. You can also use the `/delegate` command to have Copilot create the issue for you:
-   ```
-   /delegate Create a GitHub issue titled "Initial Node.js Calculator App" requesting basic arithmetic operations (add, subtract, multiply, divide) to be implemented in calculator.js
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > /delegate Create a GitHub issue titled "Initial Node.js Calculator App" requesting basic arithmetic operations (add, subtract, multiply, divide) to be implemented in calculator.js
+   > ```
 
 > [!NOTE]
 > When you create the issue, the workflow will automatically verify your work and prepare the next step!

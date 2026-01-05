@@ -4,17 +4,19 @@ Duck wants to expand the calculator with additional operations by creating a new
 
 ### 📖 Theory: Iterative Development with Copilot CLI
 
-**Iterative Development and Agile Practices**
+#### Iterative Development and Agile Practices
 
 Modern software development follows iterative approaches where features are built incrementally:
+
 - Start with a minimal viable product (MVP)
 - Add features in small, manageable chunks
 - Test and validate each addition
 - Continuously improve based on feedback
 
-**Maintaining Momentum with Copilot CLI**
+#### Maintaining Momentum with Copilot CLI
 
 The standalone Copilot CLI helps maintain development momentum by:
+
 - Quickly generating code for new features using the latest AI models
 - Suggesting best practices and patterns
 - Helping debug and test new functionality
@@ -22,24 +24,29 @@ The standalone Copilot CLI helps maintain development momentum by:
 - Handling long-running shell commands more efficiently
 - Supporting improved automation with the headless `-p` mode
 
-**Delegating Larger Tasks**
+#### Delegating Larger Tasks
 
 For more complex tasks, you can use the `/delegate` command:
-```bash
-copilot
+
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+>
+> ```prompt
+> copilot
 > /delegate Add modulo, exponentiation, and square root functions to calculator.js with proper error handling
-```
+> ```
 
 Copilot coding agent will:
+
 1. Create a new branch automatically
 2. Open a draft pull request
 3. Work on the task autonomously
 4. Stream output to your terminal
 5. Request your review when complete
 
-**Testing and Improvement Workflows**
+#### Testing and Improvement Workflows
 
 As you add features, Copilot CLI can help you:
+
 - Generate test cases for new operations
 - Suggest edge cases to consider
 - Create documentation
@@ -49,46 +56,66 @@ As you add features, Copilot CLI can help you:
 ### ⌨️ Activity: Add More Operations to the Calculator
 
 1. Start an interactive Copilot CLI session:
-   ```bash
-   copilot
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > copilot
+   > ```
 
 1. Ask Copilot CLI to help you create another issue for expanding the calculator:
-   ```
-   Help me create a GitHub issue to add more operations to my calculator. I want to add modulo, exponentiation (power), and square root functions with proper error handling.
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Help me create a GitHub issue to add more operations to my calculator. I want to add modulo, exponentiation (power), and square root functions with proper error handling.
+   > ```
 
 1. Or use the `/delegate` command to create the issue:
-   ```
-   /delegate Create a GitHub issue titled "Add More Operations to Calculator" requesting modulo, exponentiation, and square root functions to be added to calculator.js with error handling
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > /delegate Create a GitHub issue titled "Add More Operations to Calculator" requesting modulo, exponentiation, and square root functions to be added to calculator.js with error handling
+   > ```
 
 1. Work with Copilot CLI to implement the new operations:
-   ```
-   Help me add these functions to my calculator.js:
-   1. modulo(a, b) - returns the remainder of a divided by b
-   2. power(base, exponent) - returns base raised to the exponent
-   3. squareRoot(n) - returns the square root of n with error handling for negative numbers
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Help me add these functions to my calculator.js:
+   > 1. modulo(a, b) - returns the remainder of a divided by b
+   > 2. power(base, exponent) - returns base raised to the exponent
+   > 3. squareRoot(n) - returns the square root of n with error handling for negative numbers
+   > ```
 
 1. Alternatively, use the headless mode:
-   ```bash
-   copilot -p "Add modulo, exponentiation (power), and square root functions to a Node.js calculator module. Include proper error handling for edge cases like negative square roots."
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > copilot -p "Add modulo, exponentiation (power), and square root functions to a Node.js calculator module. Include proper error handling for edge cases like negative square roots."
+   > ```
 
 1. Update your `calculator.js` file with the new functions
 
 1. Test your new functions:
-   ```bash
-   node -e "const calc = require('./calculator'); console.log('5 % 2 =', calc.modulo(5, 2)); console.log('2 ^ 3 =', calc.power(2, 3)); console.log('√16 =', calc.squareRoot(16));"
-   ```
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > node -e "const calc = require('./calculator'); console.log('5 % 2 =', calc.modulo(5, 2)); console.log('2 ^ 3 =', calc.power(2, 3)); console.log('√16 =', calc.squareRoot(16));"
+   > ```
 
 1. Commit your changes:
-   ```bash
-   git add calculator.js
-   git commit -m "Add modulo, power, and square root operations"
-   git push
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > git add calculator.js
+   > git commit -m "Add modulo, power, and square root operations"
+   > git push
+   > ```
 
 > [!TIP]
 > Use `/share` in your Copilot CLI session to save your conversation as a Markdown file or GitHub gist for future reference!

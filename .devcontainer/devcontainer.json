@@ -18,7 +18,7 @@
       }
     }
   },
-  "postCreateCommand": "echo '🚀 Welcome to the Copilot CLI Exercise!' && echo '' && echo '📝 To install the standalone GitHub Copilot CLI:' && echo '   Run: npm install -g @github/copilot' && echo '' && echo '📝 Then start Copilot CLI by running:' && echo '   copilot' && echo '' && echo '📖 Open README.md to get started with the exercise!' && echo '' && npm install",
+  "postCreateCommand": "echo '🚀 Welcome to the Copilot CLI Skills Exercise!' && echo '' && echo '📝 To install the standalone GitHub Copilot CLI:' && echo '   Run: npm install -g @github/copilot' && echo '' && echo '📝 Then start Copilot CLI by running:' && echo '   copilot' && echo '' && echo '📖 Open README.md to get started with the exercise!' && echo '' && npm install",
   "onCreateCommand": "chmod +x .devcontainer/setup.sh 2>/dev/null || true",
   "portsAttributes": {
     "3000": {
