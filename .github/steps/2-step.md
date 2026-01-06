@@ -72,13 +72,13 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > copilot
    > ```
 
-1. Ask Copilot CLI to help you create the calculator functions based on the image:
+1. Ask Copilot CLI to help you create the calculator functions based on the image and the GitHub issue created earlier:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
    > @images/node-js-calculator.png help me create a Node.js calculator app based on
-   > this image and all the math operations shown.
+   > this image and all the math operations shown and detailed in issue #{{full_repo_name}}#2.
    > Make sure to create the "src" directory and put all the app code there.
    > ```
 
@@ -89,7 +89,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > ```prompt
    > copilot -p "@images/node-js-calculator.png help me create
    > a Node.js calculator app based on this image
-   > and all the math operations shown.
+   > and all the math operations shown and detailed in issue #{{full_repo_name}}#2.
    > Make sure to create the 'src' directory and put all the app code there."
    > ```
 
