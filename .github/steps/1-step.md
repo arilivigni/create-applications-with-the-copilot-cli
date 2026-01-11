@@ -1,6 +1,6 @@
 ## Step 1: Install Copilot CLI and Use the Issue Template
 
-Duck is getting ready to manage development for the Node.js calculator app and wants to install the standalone Copilot CLI and use the existing issue template to create a new issue.
+Duck is getting ready to manage development for the Node.js CLI calculator app and wants to install the standalone Copilot CLI and use the existing issue template to create a new issue.
 
 ### 📖 Theory: GitHub Copilot CLI - A Standalone Terminal Application
 
@@ -39,6 +39,9 @@ Issue templates help maintain consistency when team members create issues. This 
 - [Installing GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli)
 - [Using GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 - [GitHub Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/)
+
+> [!IMPORTANT]
+> You may need to authenticate with GitHub before using GitHub CLI commands. Run `gh auth login` in your terminal, or use `!gh auth login` from within the Copilot CLI session.
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
@@ -117,12 +120,12 @@ Issue templates help maintain consistency when team members create issues. This 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Help me create a GitHub issue for a Node.js calculator app using the issue template. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
+   > Help me create a GitHub issue for a Node.js CLI calculator app using the issue template. I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division. The calculator should be implemented in calculator.js.
    > ```
 
 1. Copilot CLI will help you draft and create the issue. Follow the prompts to:
 
-   - **Feature description**: Create a basic Node.js calculator with addition, subtraction, multiplication, and division operations
+   - **Feature description**: Create a basic Node.js CLI calculator with addition, subtraction, multiplication, and division operations
    - **Use case**: Learning to use Copilot CLI for code generation and development
    - **Additional context**: The calculator should be implemented in calculator.js
 

@@ -42,6 +42,9 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > - [Custom agents in Copilot CLI](https://github.blog/changelog/2025-10-28-github-copilot-cli-use-custom-agents-and-delegate-to-copilot-coding-agent/)
 > - [About custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
 
+> [!IMPORTANT]
+> You may need to authenticate with GitHub before using GitHub CLI commands. Run `gh auth login` in your terminal, or use `!gh auth login` from within the Copilot CLI session.
+
 ### ⌨️ Activity: Create a New Branch for the Calculator App
 
 1. Create and push a new branch called `create-calc-app`:
@@ -53,16 +56,19 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > ```
 
 > [!TIP]
-> Use the `!` command in Copilot CLI to execute shell commands directly from your chat session!
+> Use the `!` command in Copilot CLI to execute shell commands directly from your chat session. For example, to create and push the branch without leaving chat:
+>
+> ```prompt
+> !git checkout -b create-calc-app && git push -u origin create-calc-app
+> ```
+>
+> Verify the current branch afterward:
+>
+> ```prompt
+> !git branch --show-current
+> ```
 
 ### ⌨️ Activity: Generate Calculator Code with Copilot CLI based on an Image
-
-1. Save this image locally as `node-js-calculator.png` to use as a visual reference for the calculator interface:
-
-   > [!TIP]
-   > Right-click the image below and select "Save image as..." to save it locally as `node-js-calculator.png`:
-
-   <img alt="Node.js calculator CLI interface showing the command prompt and available operations" src="https://github.com/user-attachments/assets/330a5086-e74e-4c54-bead-91c7a9d93997" width="400">
 
 1. Start an interactive Copilot CLI session:
 
@@ -77,46 +83,46 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > @images/node-js-calculator.png help me create a Node.js calculator app based on
-   > this image and all the math operations shown and detailed in issue #{{full_repo_name}}#2.
-   > Make sure to create the "src" directory and put all the app code there.
+   > @images/js-calculator.png help me create a Node.js CLI calculator app based on this image
+   > and all the math operations shown and detailed in issue #2.
+   > Make sure to create the 'src' directory and put all the app code for the calculator there.
    > ```
 
-1. Alternatively, use the headless mode with a prompt:
+   1. Alternatively, use the headless mode with a prompt:
+
+      > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+      >
+      > ```prompt
+      > copilot -p "@images/js-calculator.png help me create a Node.js CLI calculator app based on this image
+      > and all the math operations shown and detailed in issue #2.
+      > Make sure to create the 'src' directory and put all the app code for the calculator there."
+      > ```
+
+1. Run and test your calculator functions by asking Copilot CLI:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot -p "@images/node-js-calculator.png help me create
-   > a Node.js calculator app based on this image
-   > and all the math operations shown and detailed in issue #{{full_repo_name}}#2.
-   > Make sure to create the 'src' directory and put all the app code there."
+   > Run and test the calculator functions with some example operations like 2 + 3, 10 - 4,  45 * 2, 20 / 5, 10 % 3, and 2 ** 3.
    > ```
 
-1. Update your `calculator.js` file with the generated code. You can also ask Copilot for explanations:
+1. Ask Copilot CLI to create comprehensive tests for the calculator functions:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot -p "Explain how module.exports works in Node.js"
+   > Create comprehensive unit tests for all the calculator functions in the src directory.
+   > Use a popular Node.js testing framework and place the tests in a tests directory.
+   > Include tests for all math operations: addition, subtraction, multiplication, division,
+   > modulo, and exponentiation. Also test edge cases like division by zero.
    > ```
-
-1. Test your calculator functions:
+  
+1. Once satisfied with the code, commit your changes through Copilot CLI:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > node -e "const calc = require('./calculator'); console.log('2 + 3 =', calc.add(2, 3)); console.log('10 - 4 =', calc.subtract(10, 4));"
-   > ```
-
-1. Commit your changes:
-
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > git add calculator.js
-   > git commit -m "Implement basic calculator operations"
-   > git push
+   > Add all calculator files to git, commit with message "Implement basic calculator operations", and push the changes
    > ```
 
 > [!TIP]
