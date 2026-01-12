@@ -79,7 +79,7 @@ As you add features, Copilot CLI can help you:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Help me add these functions to my calculator.js:
+   > Help me add these functions to my calculator.js based on issue #3:
    > 1. modulo(a, b) - returns the remainder of a divided by b
    > 2. power(base, exponent) - returns base raised to the exponent
    > 3. squareRoot(n) - returns the square root of n with error handling for negative numbers
