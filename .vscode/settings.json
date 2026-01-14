@@ -18,5 +18,11 @@
     "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.defaultProfile.linux": "bash",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.closeOnFileDelete": true
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.layoutControl.enabled": false,
+    "workbench.layoutControl.type": "hidden",
+    "workbench.panel.opensMaximized": "always",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "window.openFilesInNewWindow": "off"
 }
