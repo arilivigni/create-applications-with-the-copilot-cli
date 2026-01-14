@@ -12,9 +12,11 @@
     },
     "github.copilot.editor.enableAutoCompletions": false,
     "workbench.activityBar.location": "hidden",
-    "workbench.activityBar.visible": false,
     "workbench.explorer.enabled": false,
-    "github.copilot-chat.enable": false,
+    "explorer.enabled": false,
+    "explorer.autoReveal": false,
+    "explorer.openEditors.visible": 0,
+    "github.copilot-chat.enabled": false,
     "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.defaultProfile.linux": "bash",
     "workbench.editor.enablePreview": false,
@@ -24,5 +26,6 @@
     "workbench.panel.opensMaximized": "always",
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
+    "chat.commandCenter.enabled": false,
     "window.openFilesInNewWindow": "off"
 }
