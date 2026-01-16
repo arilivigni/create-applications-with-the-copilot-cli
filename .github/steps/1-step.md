@@ -52,6 +52,9 @@ Issue templates help maintain consistency when team members create issues. This 
    - The free tier of Codespaces that comes with all GitHub accounts is fine, assuming you still have minutes available.
    - The default Codespace settings are fine.
 
+> [!IMPORTANT]
+> This Codespace VS Code environment has been simplified to focus on using the Copilot CLI in the terminal. You'll primarily be working with terminal commands rather than the full VS Code feature set.
+
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
@@ -102,7 +105,7 @@ Issue templates help maintain consistency when team members create issues. This 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot
+   > copilot --allow-all
    > ```
 
 > [!NOTE]
@@ -113,8 +116,11 @@ Issue templates help maintain consistency when team members create issues. This 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > !gh auth login
+   > /login
    > ```
+
+> [!NOTE]
+> After running `/login`, you will be provided with a link and an authentication code. Click the link to open GitHub in your browser, then enter the code to complete the authentication process.
 
 3. Ask Copilot CLI to help you create a feature request issue for the calculator app:
 
@@ -122,7 +128,11 @@ Issue templates help maintain consistency when team members create issues. This 
    >
    > ```prompt
    > Create a GitHub issue for a Node.js CLI calculator app using the issue template as the format.
-   > I want to request a feature for basic arithmetic operations including addition, subtraction, multiplication, and division.
+   > I want to request a feature for basic arithmetic operations including 
+   > - addition
+   > - subtraction
+   > - multiplication
+   > - division
    > The calculator should be implemented in calculator.js.
    > ```
 

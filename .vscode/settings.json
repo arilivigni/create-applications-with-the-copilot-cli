@@ -17,7 +17,7 @@
     "explorer.autoReveal": false,
     "explorer.openEditors.visible": 0,
     "github.copilot-chat.enabled": false,
-    "chat.disableAIFeatures": true,
+    "chat.disableAIFeatures": false,
     "chat.editor.show": false,
     "workbench.panel.chat.view.enabled": false,
     "terminal.integrated.defaultLocation": "editor",
@@ -34,5 +34,9 @@
     "terminal.integrated.automationProfile.linux": null,
     "workbench.action.terminal.focus": true,
     "terminal.integrated.showOnStartup": "always",
-    "workbench.panel.opensMaximized": "always"
+    "workbench.panel.opensMaximized": "always",
+    "github.copilot.chat.editor.entryPoints": {
+        "inlineChat": false
+    },
+    "github.copilot.chat.keyboardShortcuts.enableCmd+I": false
 }

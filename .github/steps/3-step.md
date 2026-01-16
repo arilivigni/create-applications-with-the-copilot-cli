@@ -28,11 +28,9 @@ The standalone Copilot CLI helps maintain development momentum by:
 
 For more complex tasks, you can use the `/delegate` command exampled below to assign work to the Copilot coding agent:
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
->
-> ```prompt
-> copilot
-> /delegate Add modulo, exponentiation, and square root functions to calculator.js with proper error handling
+> ```bash
+> > copilot
+> > /delegate Add modulo, exponentiation, and square root functions to calculator.js with proper error handling
 > ```
 
 Copilot coding agent will:
@@ -95,7 +93,8 @@ As you add features, Copilot CLI can help you:
       > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
       >
       > ```prompt
-      > copilot -p "Add modulo, exponentiation (power), and square root functions to a Node.js calculator module. 
+      > copilot -p "Add modulo, exponentiation (power), 
+      > and square root functions to a Node.js calculator module. 
       > Include proper error handling for edge cases like negative square roots."
       > ```
 
@@ -104,17 +103,23 @@ As you add features, Copilot CLI can help you:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Test the new calculator functions: modulo with 5 % 2, power with 2 ^ 3, and square root with √16.
-   > Add these tests to a tests/calculator.test.js file using a popular Node.js testing framework.
-   > Make sure to include edge case tests like division by zero and square root of negative numbers.
-   > Make sure all tests pass.
+   > Add tests for the new calculator operations: 
+   > - Expand tests based on the following example:
+   >   - @images/calc-extended-operations.png
+   > - Add these tests to a src/tests/calculator.test.js file
+   > - Use a popular Node.js testing framework if one isn't installed
+   > - Make sure to include edge case tests like square root of negative numbers
+   > - Make sure all tests run and pass
    > ```
 
 1. Commit your changes:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Add calculator.js to git, commit with message "Add modulo, power, and square root operations", and push the changes
+   > Add all calculator files to git.
+   > Commit with message "Implemented additional calculator operations: 
+   > modulo, power, square root" 
+   > Push the changes
    > ```
 
 > [!TIP]
