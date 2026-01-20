@@ -14,7 +14,7 @@ Key capabilities include:
 - Generating code snippets and scripts directly in your terminal
 - Assisting with Git operations and GitHub interactions
 - Supporting image inputs via paste and drag-and-drop for visual context
-- Using the `/share` command to save chat sessions as Markdown files or GitHub gists
+- `/share [file|gist] [path]` - Share session to markdown file or GitHub gist
 - Creating **custom agents** to encode specialized prompts and workflows
 - Delegating tasks to **Copilot coding agent** using the `/delegate` command
 
@@ -41,7 +41,8 @@ Issue templates help maintain consistency when team members create issues. This 
 - [GitHub Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/)
 
 > [!IMPORTANT]
-> You may need to authenticate with GitHub before using GitHub CLI commands. Run `gh auth login` in your terminal, or use `!gh auth login` from within the Copilot CLI session.
+> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> or use `!gh auth login` from within the Copilot CLI session.
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
@@ -100,6 +101,9 @@ Issue templates help maintain consistency when team members create issues. This 
 
 ### ⌨️ Activity 3: Create an Issue Using Copilot CLI
 
+> [!NOTE]
+> `copilot --allow-all` enables all features of Copilot CLI, including those that may require additional permissions. This is useful for development and testing purposes.
+
 1. Start an interactive Copilot CLI session:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
@@ -116,11 +120,11 @@ Issue templates help maintain consistency when team members create issues. This 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > /login
+   > !gh auth login
    > ```
 
 > [!NOTE]
-> After running `/login`, you will be provided with a link and an authentication code. Click the link to open GitHub in your browser, then enter the code to complete the authentication process.
+> After running `!gh auth login`, you will be provided with a link and an authentication code. Click the link to open GitHub in your browser, then enter the code to complete the authentication process.
 
 1. Explore useful slash commands in Copilot CLI:
 
@@ -132,29 +136,29 @@ Issue templates help maintain consistency when team members create issues. This 
      > /session
      > ```
 
-   - Share your session as a GitHub gist for future reference:
+   - View your current context information:
 
      > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
      >
      > ```prompt
-     > /share gist
+     > /context
      > ```
 
 > [!TIP]
-> The `/session` command shows details about your current chat session. The `/share gist` command saves your conversation as a GitHub gist, which is useful for sharing solutions or keeping a record of helpful interactions.
+> The `/session` command shows details about your current chat session. The `/context` command displays context information about files and resources currently being used in your conversation.
 
 1. Ask Copilot CLI to help you create a feature request issue for the calculator app:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Create a GitHub issue for a Node.js CLI calculator app using the issue template as the format.
+   > Create a GitHub issue for a Node.js CLI calculator app using the feature_request.md template as the format.
    > I want to request a feature for basic arithmetic operations including 
    > - addition
    > - subtraction
    > - multiplication
    > - division
-   > The calculator should be implemented in calculator.js.
+   > The calculator should be implemented in calculator.js and create the issue directly in the current owner/repository on github.com.
    > ```
 
 > [!NOTE]

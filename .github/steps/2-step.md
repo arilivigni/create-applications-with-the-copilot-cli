@@ -12,7 +12,7 @@ The standalone Copilot CLI (`copilot` command) provides a rich interactive exper
 - Have natural conversations about your code and get intelligent suggestions
 - Generate boilerplate code based on your requirements
 - Use the latest AI models for cutting-edge responses
-- Share your session using the `/share` command to save as Markdown or a gist
+- `/share [file|gist] [path]` - Share session to markdown file or GitHub gist
 
 #### Custom Agents
 
@@ -46,7 +46,8 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > - [About custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
 
 > [!IMPORTANT]
-> You may need to authenticate with GitHub before using GitHub CLI commands. Use the `/login` command once you are in the Copilot CLI interactively.
+> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> or use `!gh auth login` from within the Copilot CLI session.
 
 ### ⌨️ Activity: Create a New Branch for the Calculator App
 
@@ -88,9 +89,9 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > ```prompt
    > @images/js-calculator.png help me create a Node.js CLI calculator app 
    > based on this image and all the math operations shown and detailed
-   > in the latest issue in this repository.
-   > Make sure to create the 'src' directory 
-   > and put all the app code for the calculator there.
+   > in the latest issue in this owner/repository.
+   > Create the code and put it in the 'src' directory.
+   > Make sure the calculator is commented with the operations it supports.
    > ```
 
    1. Optional alternatively, use the headless mode with a prompt:
@@ -100,9 +101,9 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
       > ```prompt
       > copilot -p "@images/js-calculator.png help me create a Node.js CLI calculator app 
       > based on this image and all the math operations shown and detailed
-      > in the latest issue in this repository.
-      > Make sure to create the 'src' directory
-      > and put all the app code for the calculator there."
+      > in the latest issue in this owner/repository.
+      > Create the code and put it in the 'src' directory.
+      > Make sure the calculator is commented with the operations it supports."
       > ```
 
 > [!NOTE]
@@ -131,6 +132,9 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > - test edge cases like division by zero
    > - Make sure all tests run and pass
    > ```
+
+> [!NOTE]
+> Hit ctrl+o to see output of the passed tests that Copilot CLI ran for you!
   
 1. Once satisfied with the code, commit your changes through Copilot CLI:
 

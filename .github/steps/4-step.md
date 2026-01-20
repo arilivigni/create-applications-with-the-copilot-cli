@@ -45,7 +45,8 @@ The Copilot CLI enables you to:
 - [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/best-practices-for-using-github-copilot/best-practices-for-code-review-with-github-copilot)
 
 > [!IMPORTANT]
-> You may need to authenticate with GitHub before using GitHub CLI commands. Run `gh auth login` in your terminal, or use `!gh auth login` from within the Copilot CLI session.
+> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> or use `!gh auth login` from within the Copilot CLI session.
 
 ### ⌨️ Activity: Complete Your Pull Request Workflow
 
@@ -114,7 +115,7 @@ The Copilot CLI enables you to:
    > ```
 
 > [!TIP]
-> Use `/share` in your Copilot CLI session to save your entire workflow conversation 
+> Use `/share gist` in your Copilot CLI session to save your entire workflow conversation 
 > as a Markdown file or GitHub gist for documentation and future reference!
 
 <details>
