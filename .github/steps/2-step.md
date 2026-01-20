@@ -128,7 +128,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    >   - @images/calc-basic-operations.png
    > - Add these tests to a src/tests/calculator.test.js file
    > - Use a popular Node.js testing framework if one isn't installed
-   > - addition, subtraction, multiplication, and division
+   > - add, subtract, multiply, and divide
    > - test edge cases like division by zero
    > - Make sure all tests run and pass
    > ```

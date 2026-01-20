@@ -57,37 +57,37 @@ jobs:
           file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
           edit-mode: replace
 
-      - name: Check if calculator.js has addition function
-        id: check-addition-function
+      - name: Check if calculator.js has add function
+        id: check-add-function
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: src/calculator.js
-          keyphrase: addition
+          keyphrase: add
 
-      - name: Check if calculator.js has subtraction function
-        id: check-subtraction-function
+      - name: Check if calculator.js has subtract function
+        id: check-subtract-function
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: src/calculator.js
-          keyphrase: subtraction
+          keyphrase: subtract
 
-      - name: Check if calculator.js has multiplication function
-        id: check-multiplication-function
+      - name: Check if calculator.js has multiply function
+        id: check-multiply-function
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: src/calculator.js
-          keyphrase: multiplication
+          keyphrase: multiply
 
-      - name: Check if calculator.js has division function
-        id: check-division-function
+      - name: Check if calculator.js has divide function
+        id: check-divide-function
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: src/calculator.js
-          keyphrase: division
+          keyphrase: divide
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -100,14 +100,14 @@ jobs:
           vars: |
             step_number: 2
             results_table:
-              - description: "Calculator has 'addition' function"
-                passed: ${{ steps.check-addition-function.outcome == 'success' }}
-              - description: "Calculator has 'subtraction' function"
-                passed: ${{ steps.check-subtraction-function.outcome == 'success' }}
-              - description: "Calculator has 'multiplication' function"
-                passed: ${{ steps.check-multiplication-function.outcome == 'success' }}
-              - description: "Calculator has 'division' function"
-                passed: ${{ steps.check-division-function.outcome == 'success' }}
+              - description: "Calculator has 'add' function"
+                passed: ${{ steps.check-add-function.outcome == 'success' }}
+              - description: "Calculator has 'subtract' function"
+                passed: ${{ steps.check-subtract-function.outcome == 'success' }}
+              - description: "Calculator has 'multiply' function"
+                passed: ${{ steps.check-multiply-function.outcome == 'success' }}
+              - description: "Calculator has 'divide' function"
+                passed: ${{ steps.check-divide-function.outcome == 'success' }}
 
       - name: Fail job if not all checks passed
         if: contains(steps.*.outcome, 'failure')
