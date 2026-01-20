@@ -113,7 +113,7 @@ Issue templates help maintain consistency when team members create issues. This 
 > The `--enable-all-github-mcp-tools` flag enables all GitHub MCP (Model Context Protocol) tools,
 > giving Copilot CLI access to GitHub features like creating issues, managing repositories, and more.
 > When starting Copilot CLI, you may be prompted to add this folder to the trusted folder list and to key bindings. Respond **yes** to both prompts to continue.
-> Since we didn't use the `--allow-all` option when starting Copilot CLI, you may be prompted to enable certain features during the session. Respond **yes** to these prompts as well.
+> Depending on your Copilot CLI configuration (for example, if you don't use the `--allow-all` option), you may be prompted to enable certain features during the session. Respond **yes** to these prompts as well.
 
 1. Authorize with GitHub (if not already authenticated):
 
