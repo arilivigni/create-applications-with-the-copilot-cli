@@ -161,7 +161,7 @@ Issue templates help maintain consistency when team members create issues. This 
    > - division
    > The calculator should be implemented in calculator.js
    > Create the issue directly in the current owner in this session
-   > and repository on github.com using the `gh` cli commands.
+   > and repository on github.com using the `gh` CLI commands.
    > ```
 
 > [!NOTE]
