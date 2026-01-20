@@ -55,7 +55,8 @@ As you add features, Copilot CLI can help you:
 - Save and share your development sessions using `/share`
 
 > [!IMPORTANT]
-> You may need to authenticate with GitHub before using GitHub CLI commands. Run `gh auth login` in your terminal, or use `!gh auth login` from within the Copilot CLI session.
+> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> or use `!gh auth login` from within the Copilot CLI session.
 
 ### ⌨️ Activity: Add More Operations to the Calculator
 
@@ -64,7 +65,7 @@ As you add features, Copilot CLI can help you:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot
+   > copilot --allow-all
    > ```
 
 1. Ask Copilot CLI to help you create another issue for expanding the calculator:
@@ -72,9 +73,12 @@ As you add features, Copilot CLI can help you:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Help me create a GitHub issue to add more operations to my calculator. 
-   > I want to add modulo, exponentiation (power), and square root functions 
-   > with proper error handling using the feature request issue template.
+   > Create a GitHub issue for a Node.js CLI calculator app using the feature_request.md template as the format.
+   > I want to request a feature to add more operations including 
+   > - modulo
+   > - exponentiation (power)
+   > - square root
+   > The calculator should be implemented in calculator.js and create the issue directly in the current owner/repository on github.com.
    > ```
 
 1. Work with Copilot CLI to implement the new operations:
@@ -82,7 +86,7 @@ As you add features, Copilot CLI can help you:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > Help me add these functions to my calculator.js based on latest issue created:
+   > Add these functions to my existing calculator.js based on latest issue created:
    > 1. modulo(a, b) - returns the remainder of a divided by b
    > 2. power(base, exponent) - returns base raised to the exponent
    > 3. squareRoot(n) - returns the square root of n with error handling for negative numbers
@@ -93,9 +97,10 @@ As you add features, Copilot CLI can help you:
       > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
       >
       > ```prompt
-      > copilot -p "Add modulo, exponentiation (power), 
-      > and square root functions to a Node.js calculator module. 
-      > Include proper error handling for edge cases like negative square roots."
+      > copilot -p "Add these functions to my existing calculator.js based on latest issue created:
+      > 1. modulo(a, b) - returns the remainder of a divided by b
+      > 2. power(base, exponent) - returns base raised to the exponent
+      > 3. squareRoot(n) - returns the square root of n with error handling for negative numbers"
       > ```
 
 1. Test your new functions and add tests:
@@ -106,7 +111,7 @@ As you add features, Copilot CLI can help you:
    > Add tests for the new calculator operations: 
    > - Expand tests based on the following example:
    >   - @images/calc-extended-operations.png
-   > - Add these tests to a src/tests/calculator.test.js file
+   > - Add these tests to the existing src/tests/calculator.test.js file
    > - Use a popular Node.js testing framework if one isn't installed
    > - Make sure to include edge case tests like square root of negative numbers
    > - Make sure all tests run and pass
