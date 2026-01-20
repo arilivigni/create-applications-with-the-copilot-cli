@@ -55,10 +55,10 @@ The Copilot CLI enables you to:
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > copilot
+   > copilot --allow-all --enable-all-github-mcp-tools
    > ```
 
-2. Create a pull request for your changes and add Copilot as a reviewer:
+1. Create a pull request for your changes and add Copilot as a reviewer:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -69,13 +69,21 @@ The Copilot CLI enables you to:
    > and request a review on the PR.
    > ```
 
-3. Attach the pull request to both issues you created earlier:
+1. Attach the pull request to both issues you created earlier:
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
    > Link the pull request I just created to both the "Create a calculator" and 
    > "Add more operations" issues so they close automatically when merged.
+   > ```
+
+1. Merge the pull request after Copilot's review is complete:
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Merge the pull request
    > ```
 
 > [!TIP]
