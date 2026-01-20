@@ -59,18 +59,21 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
    > copilot -p "Create and push a new branch called 'create-calc-app'"
    > ```
 
-> [!TIP]
-> Use the `!` command in Copilot CLI to execute shell commands directly from your chat session. For example, to create and push the branch without leaving chat:
->
-> ```prompt
-> !git checkout -b create-calc-app && git push -u origin create-calc-app
-> ```
->
-> Verify the current branch afterward:
->
-> ```prompt
-> !git branch --show-current
-> ```
+<details>
+<summary>Having trouble? 🤷</summary><br/>
+
+Use the `!` command in Copilot CLI to execute shell commands directly from your chat session. For example, to create and push the branch without leaving chat:
+
+ ```prompt
+ !git checkout -b create-calc-app && git push -u origin create-calc-app
+ ```
+
+ Verify the current branch afterward:
+
+ ```prompt
+ !git branch --show-current
+ ```
+</details>
 
 ### ⌨️ Activity: Generate Calculator Code with Copilot CLI based on an Image
 
