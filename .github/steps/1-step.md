@@ -196,7 +196,7 @@ Issue templates help maintain consistency when team members create issues. This 
 - Make sure you have Node.js 22+ installed: `node --version`
 - If npm install fails, try: `sudo npm install -g @github/copilot`
 - Make sure you have GitHub Copilot access enabled for your account
-- If authentication fails, run `copilot` and run `!github auth login`
+- If authentication fails, run `copilot` and run `!gh auth login`
 - You can also create the issue through the GitHub UI if needed
 
 </details>
