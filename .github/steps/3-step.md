@@ -21,8 +21,10 @@ For more complex tasks, you can use the `/delegate` command exampled below to as
 
 > ```bash
 > copilot
-> /delegate Add modulo, exponentiation,
-> and square root functions to calculator.js with proper error handling
+> ```
+>
+> ```text
+> /delegate Add modulo, exponentiation, and square root functions to calculator.js with proper error handling
 > ```
 
 Copilot coding agent will:
