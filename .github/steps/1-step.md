@@ -81,7 +81,7 @@ Issue templates help maintain consistency when team members create issues. This 
 
 1. Open your Codespace (if not already open)
 
-1. Install the standalone GitHub Copilot CLI by running in the termnal window:
+1. Install the standalone GitHub Copilot CLI by running in the terminal window:
 
    > ![Static Badge](https://img.shields.io/badge/Terminal-text?logo=gnometerminal&labelColor=0969da&color=ddf4ff)
 
