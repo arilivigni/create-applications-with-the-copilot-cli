@@ -20,8 +20,9 @@ The standalone Copilot CLI helps maintain development momentum by:
 For more complex tasks, you can use the `/delegate` command exampled below to assign work to the Copilot coding agent:
 
 > ```bash
-> > copilot
-> > /delegate Add modulo, exponentiation, and square root functions to calculator.js with proper error handling
+> copilot
+> /delegate Add modulo, exponentiation,
+> and square root functions to calculator.js with proper error handling
 > ```
 
 Copilot coding agent will:
