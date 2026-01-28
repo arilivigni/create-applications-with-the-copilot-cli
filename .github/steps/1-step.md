@@ -113,6 +113,10 @@ Issue templates help maintain consistency when team members create issues. This 
 > [!NOTE]
 > When starting Copilot CLI, you may be prompted to add this folder to the trusted folder list and to key bindings. Respond **yes** to both prompts to continue.
 
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/75c16b1c-8377-4a82-97ad-464baf23b77c" />
+</br>
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/5c5efc46-06e2-4a53-bfe1-5a335adba521" />
+
 2. Authorize with GitHub (if not already authenticated) in the Copilot CLI:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
@@ -178,9 +182,11 @@ Issue templates help maintain consistency when team members create issues. This 
    > ```
 
 > [!NOTE]
-> Copilot CLI may ask to confirm creating the issue and using `gh issue`.
+> Copilot CLI may ask to confirm creating the issue and using `gh issue` and `git config`.
 > Respond **yes** to creating the issue and
-> **"Yes, and approve `gh issue` for the rest of the running session"**.
+> **"Yes, and approve `gh issue` or `git config` for the rest of the running session"**.
+
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/925ff1c6-a49c-4e7e-b4b3-222854e91b24" />
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
