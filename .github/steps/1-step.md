@@ -85,7 +85,7 @@ Issue templates help maintain consistency when team members create issues. This 
 
 1. Wait a moment for Visual Studio Code to load.
 
-1. We will be focused on the full terminal window since this is all about the CLI
+1. We will be focused on the full terminal window since this is all about the CLI.
 
 ### ⌨️ Activity 2: Install the Standalone Copilot CLI
 
