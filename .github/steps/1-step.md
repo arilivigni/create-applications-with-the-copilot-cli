@@ -9,6 +9,8 @@ He is getting ready to develop a new Node.js CLI calculator app and wants to ins
 
 GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It is installed via npm and provides a rich interactive experience for developers.
 
+<img width="40%" height="40%" alt="CopilotCLI" src="https://github.com/user-attachments/assets/1136ab45-fcc4-43a2-923f-67b797ee2705">
+
 Key capabilities and options to be aware of include:
 
 - Providing intelligent command suggestions powered by the latest AI models from OpenAI and Google
