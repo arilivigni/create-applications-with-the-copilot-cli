@@ -32,7 +32,7 @@ Key capabilities and options to be aware of include:
 
 #### Global shortcuts
 
-```bash
+```text
  @             mention files, include contents in context
  Esc           cancel the current operation
  !             execute command in your local shell (bypass Copilot)
