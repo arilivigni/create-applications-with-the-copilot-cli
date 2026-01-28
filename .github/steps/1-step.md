@@ -125,9 +125,9 @@ Issue templates help maintain consistency when team members create issues. This 
 > [!NOTE]
 > When starting Copilot CLI, you may be prompted to add this folder to the trusted folder list and to key bindings. Respond **yes** to both prompts to continue.
 
-<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/75c16b1c-8377-4a82-97ad-464baf23b77c" />
+<img width="40%" height="40%" alt="CopilotCLIAddDir" src="https://github.com/user-attachments/assets/75c16b1c-8377-4a82-97ad-464baf23b77c" />
 <br />
-<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/5c5efc46-06e2-4a53-bfe1-5a335adba521" />
+<img width="40%" height="40%" alt="CopilotCLITerminalBindings" src="https://github.com/user-attachments/assets/5c5efc46-06e2-4a53-bfe1-5a335adba521" />
 
 2. Authorize with GitHub (if not already authenticated) in the Copilot CLI:
 
