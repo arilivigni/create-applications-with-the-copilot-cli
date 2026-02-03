@@ -42,7 +42,7 @@ The Copilot CLI enables you to:
 
 - [Creating Pull Requests with GitHub CLI](https://cli.github.com/manual/gh_pr_create)
 - [Linking Issues and PRs](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
-- [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/best-practices-for-using-github-copilot/best-practices-for-code-review-with-github-copilot)
+- [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
 
 > [!IMPORTANT]
 > If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
