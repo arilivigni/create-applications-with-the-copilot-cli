@@ -19,7 +19,7 @@ GitHub Copilot CLI is a **standalone terminal application** that brings the powe
 - Supporting image inputs via paste and drag-and-drop for visual context
 - The `--enable-all-github-mcp-tools` flag enables all GitHub MCP (Model Context Protocol) tools, giving Copilot CLI access to GitHub features like creating issues, managing repositories, and more.
 - Depending on your Copilot CLI configuration (for example, if you don't use the `--allow-all` option), you may be prompted to enable certain features during the session. Respond **yes** to these prompts as well.
-- `/session`: Command shows details about your current chat session.
+- `/session`: Shows details about your current chat session.
 - `/context`: Provides a visual overview of your current token usage
 - `/usage`: Lets you view your session statistics, including:
   - The amount of premium requests used in the current session
