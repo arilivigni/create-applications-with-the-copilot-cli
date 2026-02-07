@@ -44,7 +44,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 
 ### ⌨️ Activity: Create a New Branch for the Calculator App
 
-1. Start an interactive Copilot CLI session (if not already in a session):
+1. Start a new interactive Copilot CLI session (close the previous session with `/exit`):
 
    > ![Static Badge](https://img.shields.io/badge/Terminal-text?logo=gnometerminal&labelColor=0969da&color=ddf4ff)
    >
@@ -90,7 +90,7 @@ Use the `!` command in Copilot CLI to execute shell commands directly from your 
    >
    > ```prompt
    > @images/js-calculator.png help me create a Node.js CLI calculator app 
-   > based on this image and all the math operations shown and detailed
+   > based only on the math operations in this image and and detailed
    > in the latest issue in this owner/repository.
    > Create the code and put it in the 'src' directory.
    > Make sure the calculator is commented with the operations it supports.
