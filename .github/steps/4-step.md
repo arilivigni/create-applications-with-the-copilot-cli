@@ -84,7 +84,7 @@ The Copilot CLI enables you to:
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Merge the pull request
+   > Merge the pull request and close the attached issues
    > ```
 
 > [!NOTE]
@@ -103,7 +103,7 @@ The Copilot CLI enables you to:
 
 5. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
-> [!OPTIONAL]
+> [!TIP]
 > Use `/share gist` in your Copilot CLI session to save your GitHub Skills exercise session
 > as a GitHub gist for documentation and future reference!
 
