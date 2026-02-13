@@ -117,6 +117,7 @@ As you add features, Copilot CLI can help you:
    > ```
 
 1. Commit your changes:
+
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
@@ -128,7 +129,7 @@ As you add features, Copilot CLI can help you:
 
 1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
-> [!OPTIONAL]
+> [!TIP]
 > Use `/share gist` in your Copilot CLI session to save your GitHub Skills exercise session as a GitHub gist for future reference!
 
 <details>
