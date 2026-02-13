@@ -191,6 +191,7 @@ Issue templates help maintain consistency when team members create issues. This 
    > The calculator should be implemented in calculator.js
    > Create the issue directly in the current owner in this session
    > and repository on github.com using the `gh` CLI commands.
+   > List the issue link when complete
    > ```
 
 5. Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
