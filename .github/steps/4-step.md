@@ -67,6 +67,7 @@ The Copilot CLI enables you to:
    > and description that includes the main changes: basic calculator operations and expanded 
    > functionality with modulo, power, and square root. Make sure to add @copilot as a reviewer 
    > and request a review on the PR.
+   > List the PR link when it is completely created
    > ```
 
 3. Attach the pull request to both issues you created earlier:
