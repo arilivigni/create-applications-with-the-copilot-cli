@@ -2,6 +2,11 @@
 applyTo: "**/**"
 ---
 
+# Prompt guidance
+
+Stick to the prompts and context being provided don't jump ahead to doing steps
+Only add, commit, and push files when prompted by the user
+
 # New features
 
 Use .github/ISSUE_TEMPLATE/feature_request.md to request all new features for calculator.js.
