@@ -57,28 +57,40 @@ jobs:
           file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
           edit-mode: replace
 
-      - name: Check if calculator.tests.js has a modulo test
+      - name: Detect calculator test file
+        id: detect-test-file
+        run: |
+          if [ -f "src/tests/calculator.test.js" ]; then
+            echo "path=src/tests/calculator.test.js" >> "$GITHUB_OUTPUT"
+          elif [ -f "src/tests/calculator.tests.js" ]; then
+            echo "path=src/tests/calculator.tests.js" >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::Expected src/tests/calculator.test.js or src/tests/calculator.tests.js but neither was found"
+            exit 1
+          fi
+
+      - name: Check if calculator test file has a modulo test
         id: check-modulo-test
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
-          text-file: src/tests/calculator.tests.js
+          text-file: ${{ steps.detect-test-file.outputs.path }}
           keyphrase: modulo
 
-      - name: Check if calculator.tests.js has a power test
+      - name: Check if calculator test file has a power test
         id: check-power-test
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
-          text-file: src/tests/calculator.tests.js
+          text-file: ${{ steps.detect-test-file.outputs.path }}
           keyphrase: power
 
-      - name: Check if calculator.tests.js has a 'square root' test
+      - name: Check if calculator test file has a 'square root' test
         id: check-sqrt-test
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
-          text-file: src/tests/calculator.tests.js
+          text-file: ${{ steps.detect-test-file.outputs.path }}
           keyphrase: 'square'
 
       - name: Update comment - step results
