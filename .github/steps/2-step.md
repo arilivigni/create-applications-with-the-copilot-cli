@@ -128,7 +128,7 @@ Use the `!` command in Copilot CLI to execute shell commands directly from your 
    > Create comprehensive unit tests for all the calculator functions:
    > - Expand tests based on the following example:
    >   - @images/calc-basic-operations.png
-   > - Add these tests to a src/tests/calculator.tests.js file
+   > - Add these tests to a src/tests/calculator.test.js file
    > - Use a popular Node.js testing framework if one isn't installed
    > - addition, subtraction, multiplication, and division
    > - test edge cases like division by zero
