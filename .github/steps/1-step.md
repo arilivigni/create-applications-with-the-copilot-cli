@@ -137,7 +137,7 @@ Issue templates help maintain consistency when team members create issues. This 
    > ```
 
 > [!NOTE]
-> After running `!gh auth login`, you will be provided with a link and an authentication code. Click the link to open GitHub in your browser, then enter the code to complete the authentication process.
+> After running `/login`, you will be provided with a link and an authentication code. Click the link to open GitHub in your browser, then enter the code to complete the authentication process.
 
 3. Explore useful slash commands in Copilot CLI:
    - View your current session information:
