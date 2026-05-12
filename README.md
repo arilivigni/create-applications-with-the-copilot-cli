@@ -11,7 +11,7 @@ _Learn to use GitHub Copilot CLI—a standalone terminal application—for issue
   - Familiarity with basic command line (CLI) operations
   - Basic knowledge of GitHub repositories
   - Node.js version 22 or later (for Copilot CLI installation)
-  - A GitHub Copilot subscription (Pro, Pro+, Business, or Enterprise)
+  - A GitHub Copilot subscription (Free, Pro, Pro+, Business, or Enterprise)
 
 - **How long**: This exercise takes less than 60 minutes to complete.
 
