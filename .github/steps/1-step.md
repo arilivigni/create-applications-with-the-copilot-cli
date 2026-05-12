@@ -26,7 +26,7 @@ GitHub Copilot CLI is a **standalone terminal application** that brings the powe
   - The session duration
   - The total lines of code edited
   - A breakdown of token usage per model
-- `/share [file|gist] [path]` - Share session to markdown file or GitHub gist
+- `/share [file|gist] [path]` - Share session to Markdown file or GitHub gist
 - Creating **custom agents** to encode specialized prompts and workflows
 - Delegating tasks to **Copilot coding agent** using the `/delegate` command
 
@@ -48,7 +48,7 @@ To install Copilot CLI, you need:
 
 - Node.js version 22 or later
 - npm version 10 or later
-- An active GitHub Copilot subscription (Pro, Pro+, Business, or Enterprise)
+- An active GitHub Copilot subscription (Free, Pro, Pro+, Business, or Enterprise)
 
 #### Issue Templates
 
