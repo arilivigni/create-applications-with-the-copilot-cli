@@ -15,7 +15,7 @@
     "workbench.explorer.enabled": false,
     "explorer.enabled": false,
     "explorer.autoReveal": false,
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 1,
     "github.copilot-chat.enabled": false,
     "chat.disableAIFeatures": false,
     "chat.editor.show": false,
@@ -27,14 +27,12 @@
     "workbench.layoutControl.enabled": false,
     "workbench.layoutControl.type": "hidden",
     "workbench.panel.opensMaximized": "always",
-    "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
     "chat.commandCenter.enabled": false,
     "window.openFilesInNewWindow": "off",
     "terminal.integrated.automationProfile.linux": null,
     "workbench.action.terminal.focus": true,
     "terminal.integrated.showOnStartup": "always",
-    "workbench.panel.opensMaximized": "always",
     "github.copilot.chat.editor.entryPoints": {
         "inlineChat": false
     },
