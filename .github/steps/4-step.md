@@ -46,7 +46,7 @@ The Copilot CLI enables you to:
 
 > [!IMPORTANT]
 > If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
-> or use `!gh auth login` from within the Copilot CLI session.
+> or use `/login` from within the Copilot CLI session.
 
 ### ⌨️ Activity: Complete Your Pull Request Workflow
 

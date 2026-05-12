@@ -66,7 +66,7 @@ Issue templates help maintain consistency when team members create issues. This 
 
 > [!IMPORTANT]
 > If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
-> or use `!gh auth login` from within the Copilot CLI session.
+> or use `/login` from within the Copilot CLI session.
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
@@ -209,7 +209,7 @@ Issue templates help maintain consistency when team members create issues. This 
 - Make sure you have Node.js 22+ installed: `node --version`
 - If npm install fails, try: `sudo npm install -g @github/copilot`
 - Make sure you have GitHub Copilot access enabled for your account
-- If authentication fails, run `copilot` and run `!gh auth login`
+- If authentication fails, run `copilot` and run `/login`
 - You can also create the issue through the GitHub UI if needed
 
 </details>
